@@ -29,7 +29,7 @@ namespace CalculadoraGrid
         {
             string numero = (sender as Button).Tag.ToString();
 
-            calculadoraTextBox.Text += numero;
+            calculadoraTextBlock.Text += numero;
         }
     }
 }
