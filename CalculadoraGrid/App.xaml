@@ -33,5 +33,11 @@
             <Setter Property="FontSize"
                     Value="30" />
         </Style>
+        <Style TargetType="Button">
+            <Setter Property="Margin"
+                    Value="5" />
+            <EventSetter Event="Click"
+                         Handler="numeroButton_Click" />
+        </Style>
     </Application.Resources>
 </Application>

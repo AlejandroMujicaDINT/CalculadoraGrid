@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace CalculadoraGrid
 {
@@ -13,5 +14,11 @@ namespace CalculadoraGrid
     /// </summary>
     public partial class App : Application
     {
+        public void numeroButton_Click(object sender, RoutedEventArgs e)
+        {
+            string numero = (sender as Button).Tag.ToString();
+
+            ((TextBlock)((MainWindow)MainWindow).FindName("calculadoraTextBlock")).Text += numero;
+        }
     }
 }

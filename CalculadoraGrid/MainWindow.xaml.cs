@@ -16,11 +16,5 @@ namespace CalculadoraGrid
             InitializeComponent();
         }
 
-        private void numeroButton_Click(object sender, RoutedEventArgs e)
-        {
-            string numero = (sender as Button).Tag.ToString();
-
-            calculadoraTextBlock.Text += numero;
-        }
     }
 }

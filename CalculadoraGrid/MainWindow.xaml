@@ -12,12 +12,7 @@
         Width="450"
         Icon="32.ico">
     <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="Margin"
-                    Value="5" />
-            <EventSetter Event="Click"
-                         Handler="numeroButton_Click" />
-        </Style>
+        
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
