@@ -11,10 +11,7 @@
         Height="550"
         Width="450"
         Icon="32.ico">
-    <Window.Resources>
-        
-    </Window.Resources>
-    <Grid>
+    <Grid x:Name="CalculadoraGrid">
         <Grid.RowDefinitions>
             <RowDefinition Style="{StaticResource Text}"></RowDefinition>
             <RowDefinition></RowDefinition>
@@ -32,79 +29,5 @@
                 <TextBlock x:Name="calculadoraTextBlock"></TextBlock>
             </Viewbox>
         </Border>
-        <Button x:Name="unoButton"
-                Tag="1"
-                Grid.Row="1">
-            <Viewbox>
-                <TextBlock>1</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button  x:Name="dosButton"
-                 Tag="2"
-                 Grid.Row="1"
-                 Grid.Column="1">
-            <Viewbox>
-                <TextBlock>2</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button x:Name="tresButton"
-                Grid.Row="1"
-                Grid.Column="2"
-                Tag="3">
-            <Viewbox>
-                <TextBlock>3</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button x:Name="cuatroButton"
-                Grid.Row="2"
-                Tag="4">
-            <Viewbox>
-                <TextBlock>4</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button x:Name="cincoButton"
-                Grid.Row="2"
-                Tag="5"
-                Grid.Column="1">
-            <Viewbox>
-                <TextBlock>5</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button  x:Name="seisButton"
-                 Grid.Row="2"
-                 Tag="6"
-                 Grid.Column="2">
-            <Viewbox>
-                <TextBlock>6</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button x:Name="sieteButton"
-                Grid.Row="3"
-                Tag="7">
-            <Viewbox>
-                <TextBlock>7</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button  x:Name="ochoButton"
-                 Tag="8"
-                 Grid.Row="3"
-                 Grid.Column="1">
-            <Viewbox>
-                <TextBlock>8</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button x:Name="nueveButton"
-                Tag="9"
-                Grid.Row="3"
-                Grid.Column="2">
-            <Viewbox>
-                <TextBlock>9</TextBlock>
-            </Viewbox>
-        </Button>
-        <Button x:Name="ceroButton"
-                Grid.Row="4"
-                Grid.ColumnSpan="3"
-                Tag="0"
-                FontSize="30">0</Button>
     </Grid>
 </Window>

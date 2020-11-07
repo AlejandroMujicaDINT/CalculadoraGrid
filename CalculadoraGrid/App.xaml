@@ -33,7 +33,7 @@
             <Setter Property="FontSize"
                     Value="30" />
         </Style>
-        <Style TargetType="Button">
+        <Style TargetType="Button" x:Key="botonesEvent">
             <Setter Property="Margin"
                     Value="5" />
             <EventSetter Event="Click"
